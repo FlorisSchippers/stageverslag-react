@@ -1,6 +1,8 @@
 import React from 'react';
-import Leerdoelwapper from '../glamorous/structure/Leerdoelwrapper.jsx';
-import LeerdoelButton from '../glamorous/buttons/LeerdoelButton.jsx';
+import {Link} from 'react-router-dom';
+import Leerdoellist from '../glamorous/header/Leerdoellist.jsx';
+import Leerdoelelement from '../glamorous/header/Leerdoelelement.jsx';
+import Leerdoellink from '../glamorous/header/Leerdoellink.jsx';
 
 class Header extends React.Component {
   constructor(props) {
@@ -10,13 +12,13 @@ class Header extends React.Component {
   render() {
     return (
       <div>
-        <Leerdoelwapper>
-          <LeerdoelButton to={'/ontwikkelen'}>Ontwikkelen</LeerdoelButton>
-          <LeerdoelButton to={'/onderzoeken'}>Onderzoeken</LeerdoelButton>
-          <LeerdoelButton to={'/ontwerpen'}>Ontwerpen</LeerdoelButton>
-          <LeerdoelButton to={'/ondernemen'}>Ondernemen</LeerdoelButton>
-          <LeerdoelButton to={'/betrokken'}>Betrokken</LeerdoelButton>
-        </Leerdoelwapper>
+        <Leerdoellist>
+          <Leerdoelelement><Leerdoellink to={'/ontwikkelen'}>Ontwikkelen</Leerdoellink></Leerdoelelement>
+          <Leerdoelelement><Leerdoellink to={'/onderzoeken'}>Onderzoeken</Leerdoellink></Leerdoelelement>
+          <Leerdoelelement><Leerdoellink to={'/ontwerpen'}>Ontwerpen</Leerdoellink></Leerdoelelement>
+          <Leerdoelelement><Leerdoellink to={'/ondernemen'}>Ondernemen</Leerdoellink></Leerdoelelement>
+          <Leerdoelelement><Leerdoellink to={'/betrokken'}>Betrokken</Leerdoellink></Leerdoelelement>
+        </Leerdoellist>
       </div>
     );
   }

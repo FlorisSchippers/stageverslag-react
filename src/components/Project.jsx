@@ -1,6 +1,6 @@
 import React from 'react';
 import Title from '../glamorous/text/Title.jsx';
-import BackButton from '../glamorous/buttons/BackButton.jsx';
+import Backbutton from '../glamorous/buttons/Backbutton.jsx';
 import Header from "./Header";
 
 class Project extends React.Component {
@@ -12,7 +12,7 @@ class Project extends React.Component {
     return (
       <div>
         <Header/>
-        <BackButton to={'/' + this.props.leerdoel}/>
+        <Backbutton to={'/' + this.props.leerdoel}/>
         <Title>Project: ...</Title>
       </div>
     );

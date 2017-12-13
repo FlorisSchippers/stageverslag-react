@@ -5,7 +5,6 @@ export default glamorous.h1({
   fontSize: '25px',
   margin: '15px auto',
   width: '100%',
-  textAlign: 'center',
   color: appVars.theme.dark,
   textTransform: 'capitalize',
 });

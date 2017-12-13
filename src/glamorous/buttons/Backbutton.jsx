@@ -12,7 +12,7 @@ export default glamorous(Link)({
   outline: 'none',
   position: 'absolute',
   left: '15px',
-  top: '50vh',
+  bottom: '15px',
 
   ':after': {
     content: ' ',

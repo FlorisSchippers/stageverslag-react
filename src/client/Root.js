@@ -5,8 +5,8 @@ import App from "../components/App";
 import Leerdoel from "../components/Leerdoel";
 import Competentie from "../components/Competentie";
 import Project from "../components/Project";
-import Leerdoelwapper from '../glamorous/structure/Leerdoelwrapper.jsx';
-import LeerdoelButton from '../glamorous/buttons/LeerdoelButton.jsx';
+import Leerdoelwapper from '../glamorous/header/Leerdoellist.jsx';
+import LeerdoelButton from '../glamorous/header/Leerdoelelement.jsx';
 
 // We need a Root component for React Hot Loading.
 class Root extends Component {
