@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Link from '../../../styled/links/Link';
+import Link from '../../../glamorous/links/Link';
 import appVars from '../../../config/appVars';
 
 const Bottom = styled.div`
