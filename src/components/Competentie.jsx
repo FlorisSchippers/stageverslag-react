@@ -38,7 +38,7 @@ class Competentie extends React.Component {
           <Subtitle>{intro}</Subtitle>
           <Content>{body}</Content>
         </Texthalve>
-        <Imagehalve css={{background: 'url(' + image + ') no-repeat center center'}}/>
+        <Imagehalve css={{backgroundImage: 'url(' + image + ')'}}/>
       </div>
     );
   }

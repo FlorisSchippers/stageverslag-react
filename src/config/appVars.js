@@ -2,7 +2,7 @@ const appVars = {
   url: `${window.location.protocol}//${window.location.host}`,
   title: 'Stageverslag',
   api: {
-    base: 'http://stageverslag.dev/wp-json/wp/v2/', // Todo: localhost
+    base: 'http://stageverslag.localhost/wp-json/wp/v2/', // Todo: localhost
   },
   theme: {
     lighter: '#DDFAA4',

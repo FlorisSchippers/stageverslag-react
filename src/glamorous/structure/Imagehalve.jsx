@@ -1,7 +1,8 @@
 import glamorous from 'glamorous';
 
 export default glamorous.div({
-  backgroundSize: '100% 100%',
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
   position: 'absolute',
   top: '55',
   right: '0',
