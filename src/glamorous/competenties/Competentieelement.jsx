@@ -6,5 +6,6 @@ export default glamorous.li({
 
     '&:before': {
         content: '➤ ',
+        color: appVars.theme.primary,
     }
 });

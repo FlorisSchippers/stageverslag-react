@@ -6,6 +6,7 @@ import Title from '../glamorous/text/Title.jsx';
 import Content from '../glamorous/text/Content.jsx';
 import Header from "./Header";
 import componentParser from "../common/componentParser";
+import AppVars from "../config/appVars";
 
 class Project extends React.Component {
     constructor(props) {
@@ -14,11 +15,15 @@ class Project extends React.Component {
 
     render() {
         let image = '';
+        let competentie_title = '';
+        let competentie_slug = '';
         let project_title = '';
         let project_body = '';
         for (let i = 0; i < this.props.data.length; i++) {
             if (this.props.location.pathname.includes(this.props.data[i].slug)) {
                 image = this.props.data[i].better_featured_image.media_details.sizes.large.source_url;
+                competentie_title = this.props.data[i].title.rendered;
+                competentie_slug = this.props.data[i].slug;
             }
             if (this.props.data[i].acf.project_repeater) {
                 for (let j = 0; j < this.props.data[i].acf.project_repeater.length; j++) {
@@ -33,9 +38,9 @@ class Project extends React.Component {
         return (
             <div>
                 <Header/>
-                <Backbutton to={'/' + this.props.leerdoel}/>
+                <Backbutton to={'/' + this.props.leerdoel + '/' + competentie_slug}/>
                 <Texthalve>
-                    <Title>{project_title}</Title>
+                    <Title>{competentie_title}</Title><Title css={{color: AppVars.theme.primary}}>&nbsp; ➤ &nbsp;</Title><Title>{project_title}</Title>
                     <Content>{project_body}</Content>
                 </Texthalve>
                 <Imagehalve css={{backgroundImage: 'url(' + image + ')'}}/>

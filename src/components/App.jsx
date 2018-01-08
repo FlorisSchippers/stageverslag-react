@@ -13,13 +13,13 @@ class App extends React.Component {
     return (
       <div>
         <Header/>
-        <Texthalve css={{width: '50%'}}>
+        <Texthalve css={{width: '45%'}}>
           <Title>Stagiair</Title><br/>
           Floris Schippers<br/>
           0920490@hr.nl<br/>
           Creative Media & Game Technologies
         </Texthalve>
-        <Texthalve css={{width: '40%'}}>
+        <Texthalve css={{width: '45%'}}>
           <Title>Bedrijf</Title><br/>
           Burst<br/>
           http://www.burst-digital.com/<br/>

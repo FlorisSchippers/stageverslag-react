@@ -1,10 +1,19 @@
 import glamorous from 'glamorous';
-import '../../public/fonts/gotham-medium.woff2';
+import appVars from '../../config/appVars';
 
 export default glamorous.p({
-    color: '${props => props.theme.intro.color}',
+    color: appVars.theme.darker,
     fontFamily: 'Open Sans',
     fontSize: '17px',
-    lineHeight: '22px',
+    lineHeight: '1.5',
     fontWeight: 'normal',
+
+    ['& a']: {
+        color: appVars.theme.dark,
+        transition: 'color 0.25s linear',
+
+        '&:hover': {
+            color: appVars.theme.primary,
+        }
+    }
 });

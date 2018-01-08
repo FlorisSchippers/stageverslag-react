@@ -4,7 +4,8 @@ import appVars from '../../config/appVars';
 export default glamorous.h1({
     fontFamily: 'Open Sans',
     fontSize: '25px',
-    margin: '15px auto',
-    width: '100%',
+    lineHeight: '1.5',
+    margin: '0 auto 25px',
+    display: 'inline-block',
     color: appVars.theme.darker,
 });
