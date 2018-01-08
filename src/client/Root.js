@@ -56,11 +56,15 @@ class Root extends Component {
         <Route exact path='/ondernemen' component={p => <Leerdoel {...p} data={this.state.ondernemen} leerdoel={'ondernemen'}/>}/>
         <Route exact path='/betrokken' component={p => <Leerdoel {...p} data={this.state.betrokken} leerdoel={'betrokken'}/>}/>
         <Route exact path='/ontwikkelen/:competentie' component={p => <Competentie {...p} data={this.state.ontwikkelen} leerdoel={'ontwikkelen'}/>}/>
+        <Route exact path='/ontwikkelen/:competentie/:project' component={p => <Project {...p} data={this.state.ontwikkelen} leerdoel={'ontwikkelen'}/>}/>
         <Route exact path='/onderzoeken/:competentie' component={p => <Competentie {...p} data={this.state.onderzoeken} leerdoel={'onderzoeken'}/>}/>
+        <Route exact path='/onderzoeken/:competentie/:project' component={p => <Project {...p} data={this.state.onderzoeken} leerdoel={'onderzoeken'}/>}/>
         <Route exact path='/ontwerpen/:competentie' component={p => <Competentie {...p} data={this.state.ontwerpen} leerdoel={'ontwerpen'}/>}/>
+        <Route exact path='/ontwerpen/:competentie/:project' component={p => <Project {...p} data={this.state.ontwerpen} leerdoel={'ontwerpen'}/>}/>
         <Route exact path='/ondernemen/:competentie' component={p => <Competentie {...p} data={this.state.ondernemen} leerdoel={'ondernemen'}/>}/>
+        <Route exact path='/ondernemen/:competentie/:project' component={p => <Project {...p} data={this.state.ondernemen} leerdoel={'ondernemen'}/>}/>
         <Route exact path='/betrokken/:competentie' component={p => <Competentie {...p} data={this.state.betrokken} leerdoel={'betrokken'}/>}/>
-        <Route exact path='/project/:project' component={Project}/>
+        <Route exact path='/betrokken/:competentie/:project' component={p => <Project {...p} data={this.state.betrokken} leerdoel={'betrokken'}/>}/>
       </Switch>
     );
   }

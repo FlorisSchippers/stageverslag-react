@@ -13,12 +13,11 @@ class App extends React.Component {
     return (
       <div>
         <Header/>
-        <Texthalve>
+        <Texthalve css={{width: '50%'}}>
           <Title>Stagiair</Title><br/>
           Floris Schippers<br/>
           0920490@hr.nl<br/>
           Creative Media & Game Technologies
-
         </Texthalve>
         <Texthalve css={{width: '40%'}}>
           <Title>Bedrijf</Title><br/>

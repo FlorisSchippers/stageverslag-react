@@ -8,7 +8,7 @@ export default glamorous(Link)({
   cursor: 'pointer',
   border: '0',
   borderRadius: '46px',
-  fontFamily: 'gothammedium',
+  // fontFamily: 'gothammedium',
   fontSize: '18px',
   height: '46px',
   lineHeight: '46px',

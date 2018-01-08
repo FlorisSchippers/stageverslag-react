@@ -2,8 +2,9 @@ import glamorous from 'glamorous';
 import appVars from '../../config/appVars';
 
 export default glamorous.h1({
-  fontSize: '20px',
-  margin: '15px 0',
-  width: 'calc(100% - 30px)',
-  color: appVars.theme.dark,
+    fontFamily: 'Open Sans',
+    fontSize: '17px',
+    fontStyle: 'italic',
+    margin: '15px 0',
+    color: appVars.theme.darker,
 });

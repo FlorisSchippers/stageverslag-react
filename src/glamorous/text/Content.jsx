@@ -1,10 +1,10 @@
 import glamorous from 'glamorous';
+import '../../public/fonts/gotham-medium.woff2';
 
 export default glamorous.p({
-  color: '${props => props.theme.intro.color}',
-  fontFamily: 'gothambook',
-  fontSize: '16px',
-  lineHeight: '22px',
-  fontWeight: 'normal',
-  width: 'calc(100% - 30px)',
+    color: '${props => props.theme.intro.color}',
+    fontFamily: 'Open Sans',
+    fontSize: '17px',
+    lineHeight: '22px',
+    fontWeight: 'normal',
 });

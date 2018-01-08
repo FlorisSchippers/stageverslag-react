@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import Leerdoellist from '../glamorous/header/Leerdoellist.jsx';
 import Leerdoelelement from '../glamorous/header/Leerdoelelement.jsx';
 import Leerdoellink from '../glamorous/header/Leerdoellink.jsx';

@@ -6,7 +6,7 @@ export default glamorous.div({
   position: 'absolute',
   top: '55',
   right: '0',
-  width: '50%',
+  width: '33%',
   height: 'calc(100% - 55px)',
   display: 'inline-block',
 });

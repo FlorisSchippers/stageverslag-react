@@ -1,10 +1,9 @@
 import glamorous from 'glamorous';
 import appVars from '../../config/appVars';
+import {Link} from 'react-router-dom';
 
-export default glamorous.h1({
+export default glamorous(Link)({
     fontFamily: 'Open Sans',
-    fontSize: '25px',
-    margin: '15px auto',
-    width: '100%',
+    fontSize: '17px',
     color: appVars.theme.darker,
 });
