@@ -14,13 +14,13 @@ class Header extends React.Component {
         const header = leerdoelen.map((leerdoel) => {
             if (window.location.pathname.includes(leerdoel.toLowerCase())) {
                 return (
-                    <Leerdoelelement css={{background: appVars.theme.dark}}>
+                    <Leerdoelelement css={{background: appVars.theme.dark}} key={leerdoelen.indexOf(leerdoel)}>
                         <Leerdoellink to={'/' + leerdoel.toLowerCase()}>{leerdoel}</Leerdoellink>
                     </Leerdoelelement>
                 )
             } else {
                 return (
-                    <Leerdoelelement>
+                    <Leerdoelelement key={leerdoelen.indexOf(leerdoel)}>
                         <Leerdoellink to={'/' + leerdoel.toLowerCase()}>{leerdoel}</Leerdoellink>
                     </Leerdoelelement>
                 )
