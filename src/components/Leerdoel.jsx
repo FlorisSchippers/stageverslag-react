@@ -10,7 +10,6 @@ import Competentieelement from '../glamorous/competenties/Competentieelement.jsx
 import Competentielist from '../glamorous/competenties/Competentielist.jsx';
 import Competentielink from '../glamorous/competenties/Competentielink.jsx';
 import Header from './Header';
-import slugParser from '../common/slugParser';
 
 class Leerdoel extends React.Component {
     constructor(props) {
@@ -22,8 +21,7 @@ class Leerdoel extends React.Component {
     }
 
     render() {
-        let intro = '';
-        let content = '';
+        let intro, content = '';
         let strippedData = [];
         this.props.data.forEach(function (competentie) {
             strippedData.push(competentie);

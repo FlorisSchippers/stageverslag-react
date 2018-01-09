@@ -15,10 +15,7 @@ class Competentie extends React.Component {
     }
 
     render() {
-        let competentie = '';
-        let intro = '';
-        let body = '';
-        let image = '';
+        let competentie, intro, body, image = '';
         for (let i = 0; i < this.props.data.length; i++) {
             if (this.props.data[i].slug === slugParser(this.props.location.pathname)) {
                 competentie = this.props.data[i].title.rendered;

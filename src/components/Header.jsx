@@ -2,6 +2,7 @@ import React from 'react';
 import Leerdoellist from '../glamorous/header/Leerdoellist.jsx';
 import Leerdoelelement from '../glamorous/header/Leerdoelelement.jsx';
 import Leerdoellink from '../glamorous/header/Leerdoellink.jsx';
+import appVars from '../config/appVars';
 
 class Header extends React.Component {
     constructor(props) {
@@ -9,15 +10,26 @@ class Header extends React.Component {
     }
 
     render() {
+        let leerdoelen = ['Ontwikkelen', 'Onderzoeken', 'Ontwerpen', 'Ondernemen', 'Betrokken'];
+        const header = leerdoelen.map((leerdoel) => {
+            if (window.location.pathname.includes(leerdoel.toLowerCase())) {
+                return (
+                    <Leerdoelelement css={{background: appVars.theme.dark}}>
+                        <Leerdoellink to={'/' + leerdoel.toLowerCase()}>{leerdoel}</Leerdoellink>
+                    </Leerdoelelement>
+                )
+            } else {
+                return (
+                    <Leerdoelelement>
+                        <Leerdoellink to={'/' + leerdoel.toLowerCase()}>{leerdoel}</Leerdoellink>
+                    </Leerdoelelement>
+                )
+            }
+        });
+
         return (
             <div>
-                <Leerdoellist>
-                    <Leerdoelelement><Leerdoellink to={'/ontwikkelen'}>Ontwikkelen</Leerdoellink></Leerdoelelement>
-                    <Leerdoelelement><Leerdoellink to={'/onderzoeken'}>Onderzoeken</Leerdoellink></Leerdoelelement>
-                    <Leerdoelelement><Leerdoellink to={'/ontwerpen'}>Ontwerpen</Leerdoellink></Leerdoelelement>
-                    <Leerdoelelement><Leerdoellink to={'/ondernemen'}>Ondernemen</Leerdoellink></Leerdoelelement>
-                    <Leerdoelelement><Leerdoellink to={'/betrokken'}>Betrokken</Leerdoellink></Leerdoelelement>
-                </Leerdoellist>
+                <Leerdoellist>{header}</Leerdoellist>
             </div>
         );
     }

@@ -4,30 +4,30 @@ import Title from '../glamorous/text/Title.jsx';
 import Header from "./Header";
 
 class App extends React.Component {
-  constructor() {
-    super();
-    // Bindings
-  }
+    constructor() {
+        super();
+        // Bindings
+    }
 
-  render() {
-    return (
-      <div>
-        <Header/>
-        <Texthalve css={{width: '45%'}}>
-          <Title>Stagiair</Title><br/>
-          Floris Schippers<br/>
-          0920490@hr.nl<br/>
-          Creative Media & Game Technologies
-        </Texthalve>
-        <Texthalve css={{width: '45%'}}>
-          <Title>Bedrijf</Title><br/>
-          Burst<br/>
-          http://www.burst-digital.com/<br/>
-          Delftseplein 30c, 3013 AA Rotterdam
-        </Texthalve>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div>
+                <Header/>
+                <Texthalve css={{width: '45%'}}>
+                    <Title>Stagiair</Title><br/>
+                    Floris Schippers<br/>
+                    0920490@hr.nl<br/>
+                    Creative Media & Game Technologies
+                </Texthalve>
+                <Texthalve css={{width: '45%'}}>
+                    <Title>Bedrijf</Title><br/>
+                    Burst<br/>
+                    http://www.burst-digital.com/<br/>
+                    Delftseplein 30c, 3013 AA Rotterdam
+                </Texthalve>
+            </div>
+        );
+    }
 }
 
 App.propTypes = {};

@@ -14,11 +14,7 @@ class Project extends React.Component {
     }
 
     render() {
-        let image = '';
-        let competentie_title = '';
-        let competentie_slug = '';
-        let project_title = '';
-        let project_body = '';
+        let image, competentie_title, competentie_slug, project_title, project_body = '';
         for (let i = 0; i < this.props.data.length; i++) {
             if (this.props.location.pathname.includes(this.props.data[i].slug)) {
                 image = this.props.data[i].better_featured_image.media_details.sizes.large.source_url;
@@ -40,7 +36,8 @@ class Project extends React.Component {
                 <Header/>
                 <Backbutton to={'/' + this.props.leerdoel + '/' + competentie_slug}/>
                 <Texthalve>
-                    <Title>{competentie_title}</Title><Title css={{color: AppVars.theme.primary}}>&nbsp; ➤ &nbsp;</Title><Title>{project_title}</Title>
+                    <Title>{competentie_title}</Title><Title
+                    css={{color: AppVars.theme.primary}}>&nbsp; ➤ &nbsp;</Title><Title>{project_title}</Title>
                     <Content>{project_body}</Content>
                 </Texthalve>
                 <Imagehalve css={{backgroundImage: 'url(' + image + ')'}}/>
