@@ -3,7 +3,7 @@ import appVars from '../../config/appVars';
 import {Link} from 'react-router-dom';
 
 export default glamorous(Link)({
-    width: '20vw',
+    width: 'calc(100vw/5)',
     height: '25px',
     color: appVars.theme.lighter,
     cursor: 'pointer',

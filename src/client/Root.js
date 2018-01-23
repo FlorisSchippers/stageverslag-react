@@ -28,7 +28,7 @@ class Root extends Component {
 
   GetWordpressData() {
     this.state.todo.forEach(function (leerdoel) {
-      fetch(appVars.api.base + leerdoel)
+      fetch(appVars.api.live + leerdoel)
         .then(results => results.json())
         .then(function (data) {
           this.setState({
