@@ -23,7 +23,9 @@ class Project extends React.Component {
                 competentie_slug = this.props.data[i].slug;
                 for (let j = 0; j < this.props.data[i].acf.project_repeater.length; j++) {
                     let parsedSlug = slugParser(this.props.location.pathname);
-                    let replacedParsedSlug = parsedSlug.replace('-', ' ');
+                    let replacedParsedSlug = parsedSlug.replace(/-/g, ' ');
+                    // console.log('slug', replacedParsedSlug);
+                    // console.log('title', this.props.data[i].acf.project_repeater[j].project_title.toLowerCase());
                     if (replacedParsedSlug.includes(this.props.data[i].acf.project_repeater[j].project_title.toLowerCase())) {
                         project_title = this.props.data[i].acf.project_repeater[j].project_title;
                         project_body = componentParser(this.props.data[i].acf.project_repeater[j].project_body);
