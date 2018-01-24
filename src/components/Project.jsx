@@ -5,6 +5,7 @@ import Imagehalve from '../glamorous/structure/Imagehalve';
 import Title from '../glamorous/text/Title.jsx';
 import Content from '../glamorous/text/Content.jsx';
 import Header from "./Header";
+import slugParser from "../common/slugParser";
 import componentParser from "../common/componentParser";
 import AppVars from "../config/appVars";
 
@@ -21,7 +22,9 @@ class Project extends React.Component {
                 competentie_title = this.props.data[i].title.rendered;
                 competentie_slug = this.props.data[i].slug;
                 for (let j = 0; j < this.props.data[i].acf.project_repeater.length; j++) {
-                    if (this.props.location.pathname.includes(this.props.data[i].acf.project_repeater[j].project_title.toLowerCase())) {
+                    let parsedSlug = slugParser(this.props.location.pathname);
+                    let replacedParsedSlug = parsedSlug.replace('-', ' ');
+                    if (replacedParsedSlug.includes(this.props.data[i].acf.project_repeater[j].project_title.toLowerCase())) {
                         project_title = this.props.data[i].acf.project_repeater[j].project_title;
                         project_body = componentParser(this.props.data[i].acf.project_repeater[j].project_body);
                     }

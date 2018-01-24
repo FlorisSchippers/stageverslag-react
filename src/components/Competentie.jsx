@@ -21,7 +21,8 @@ class Competentie extends React.Component {
                 competentie = this.props.data[i].title.rendered;
                 intro = componentParser(this.props.data[i].content.rendered);
                 body = componentParser(this.props.data[i].acf.bewijsmateriaal);
-                image = this.props.data[i].better_featured_image.media_details.sizes.large.source_url;
+                image = this.props.data[i].better_featured_image.source_url;
+                // image = this.props.data[i].better_featured_image.media_details.sizes.large.source_url;
             }
         }
 
