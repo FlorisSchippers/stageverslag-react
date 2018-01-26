@@ -46,8 +46,14 @@ class App extends React.Component {
                 break;
             case('/burst'):
                 content.title = 'Burst';
-                content.body = 'Body van burstpage';
-                content.image = '';
+                content.body = 'Burst is een Digital Production Agency, dit houdt in dat ze digitale producten maken voor klanten. Dit zijn klanten over de hele wereld, een deel van het werk is ' +
+                    '<a class="underline" href="https://www.burst-digital.com/nl/werk/">hier</a>' +
+                    ' terug te vinden.' +
+                    '<br/> &nbsp; <br/>' +
+                    'Voornamelijk zijn dit websites, maar deze worden niet alleen intern ontworpen en gebouwd, deze websites worden ook intern geanalyseerd. Dit zorgt voor een langdurige, hechte band met de klant waar Burst niet alleen een web agency is, maar een partner wordt voor de klant.' +
+                    '<br/> &nbsp; <br/>' +
+                    'Bij het oriënteren voor een stageplek was ik op zoek naar een paar speerpunten, Burst voldoet aan al die speerpunten. Burst is hecht, iedereen is aanspreekbaar, er is een goede sfeer en die wordt bekroond door een sterke cultuur. Maar voor mij was het voornamelijk belangrijjk om de mogelijkheid te krijgen om te komen leren waar ik zelf interesse in heb.';
+                content.image = 'groupphoto.jpg';
                 break;
             case('/conclusie'):
                 content.title = 'Conclusie';
