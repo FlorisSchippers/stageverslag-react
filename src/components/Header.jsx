@@ -17,7 +17,8 @@ class Header extends React.Component {
             if (leerdoel === 'Logo') {
                 return (
                     <Leerdoelelement css={{background: appVars.theme.primary}} key={leerdoelen.indexOf(leerdoel)}>
-                        <Link to='/'><Logo src='Burst-white-text.png'/></Link>
+                        <Link to='/'><Logo src='http://stageverslag.florisschippers.nl/Burst-white-text.png'/></Link>
+                        {/*<Link to='/'><Logo src='Burst-white-text.png'/></Link>*/}
                     </Leerdoelelement>
                 )
             } else if (window.location.pathname.includes(leerdoel.toLowerCase())) {

@@ -13,7 +13,7 @@ class App extends React.Component {
     }
 
     render() {
-        console.log(window.location.pathname);
+        // console.log(window.location.pathname);
         let text = {};
         let backButton = <Backbutton to={'/'}/>;
         switch (window.location.pathname) {

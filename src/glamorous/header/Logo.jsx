@@ -8,6 +8,7 @@ const mediaQueries = {
 };
 
 export default glamorous.img({
+    marginTop: '4px',
     width: '0px',
 
     [mediaQueries.tablet_portrait]: {
