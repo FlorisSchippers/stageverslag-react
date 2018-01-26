@@ -2,6 +2,7 @@ import React from 'react';
 import Leerdoellist from '../glamorous/header/Leerdoellist.jsx';
 import Leerdoelelement from '../glamorous/header/Leerdoelelement.jsx';
 import Leerdoellink from '../glamorous/header/Leerdoellink.jsx';
+import {Link} from 'react-router-dom';
 import Logo from '../glamorous/header/Logo.jsx';
 import appVars from '../config/appVars';
 
@@ -11,15 +12,15 @@ class Header extends React.Component {
     }
 
     render() {
-        let leerdoelen = ['Ontwikkelen', 'Onderzoeken', 'Ontwerpen', 'Ondernemen', 'Betrokken'];
+        let leerdoelen = ['Logo', 'Ontwikkelen', 'Onderzoeken', 'Ontwerpen', 'Ondernemen', 'Betrokken'];
         const header = leerdoelen.map((leerdoel) => {
-            // if (leerdoel === 'Logo') {
-            //     return (
-            //         <Leerdoelelement css={{background: appVars.theme.primary}} key={leerdoelen.indexOf(leerdoel)}>
-            //             <Logo src='burst-logo.jpg'/>
-            //         </Leerdoelelement>
-            //     )
-            if (window.location.pathname.includes(leerdoel.toLowerCase())) {
+            if (leerdoel === 'Logo') {
+                return (
+                    <Leerdoelelement css={{background: appVars.theme.primary}} key={leerdoelen.indexOf(leerdoel)}>
+                        <Link to='/'><Logo src='Burst-white-text.png'/></Link>
+                    </Leerdoelelement>
+                )
+            } else if (window.location.pathname.includes(leerdoel.toLowerCase())) {
                 return (
                     <Leerdoelelement css={{background: appVars.theme.dark}} key={leerdoelen.indexOf(leerdoel)}>
                         <Leerdoellink to={'/' + leerdoel.toLowerCase()}>{leerdoel}</Leerdoellink>

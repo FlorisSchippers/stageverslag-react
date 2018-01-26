@@ -10,7 +10,7 @@ const mediaQueries = {
 };
 
 export default glamorous(Link)({
-    width: 'calc(100vw/5)',
+    width: 'calc(100vw / 5)',
     height: '25px',
     color: appVars.theme.lighter,
     cursor: 'pointer',
@@ -28,7 +28,8 @@ export default glamorous(Link)({
         fontSize: '19px',
     },
     [mediaQueries.tablet_portrait]: {
-        fontSize: '22px',
+        fontSize: '20px',
+        width: 'calc((100vw - 100px) / 5)',
     },
     [mediaQueries.tablet_landscape]: {
         fontSize: '25px',
