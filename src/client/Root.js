@@ -51,7 +51,7 @@ class Root extends Component {
     return (
       <Switch>
         <Route exact path='/' component={App}/>
-        <Route exact path='/inleiding' component={App}/>
+        <Route exact path='/introductie' component={App}/>
         <Route exact path='/burst' component={App}/>
         <Route exact path='/conclusie' component={App}/>
         <Route exact path='/ontwikkelen' component={p => <Leerdoel {...p} data={this.state.ontwikkelen} leerdoel={'ontwikkelen'}/>}/>

@@ -4,7 +4,7 @@ import appVars from '../../config/appVars';
 export default glamorous.div({
     color: appVars.theme.darker,
     fontFamily: 'Open Sans',
-    fontSize: '17px',
+    fontSize: '20px',
     lineHeight: '1.5',
     fontWeight: 'normal',
 

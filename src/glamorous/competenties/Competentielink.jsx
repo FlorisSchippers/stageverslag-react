@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 
 export default glamorous(Link)({
     fontFamily: 'Open Sans',
-    fontSize: '17px',
+    fontSize: '25px',
     color: appVars.theme.dark,
     textDecoration: 'none',
     borderBottom: '5px solid',

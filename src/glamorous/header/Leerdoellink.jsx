@@ -29,9 +29,12 @@ export default glamorous(Link)({
     },
     [mediaQueries.tablet_portrait]: {
         fontSize: '20px',
-        width: 'calc((100vw - 100px) / 5)',
+        width: 'calc((100vw - 120px) / 5)',
     },
     [mediaQueries.tablet_landscape]: {
         fontSize: '25px',
+    },
+    [mediaQueries.desktop]: {
+        fontSize: '30px',
     },
 });

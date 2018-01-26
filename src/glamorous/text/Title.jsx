@@ -3,7 +3,7 @@ import appVars from '../../config/appVars';
 
 export default glamorous.h1({
     fontFamily: 'Open Sans',
-    fontSize: '25px',
+    fontSize: '30px',
     lineHeight: '1.5',
     margin: '0 auto 25px',
     display: 'inline-block',
