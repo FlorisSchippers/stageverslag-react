@@ -12,12 +12,12 @@ export default glamorous.div({
     fontSize: '17px',
     lineHeight: '1.5',
     width: 'calc(100% - 50px)',
-    height: 'calc(100% - 80px)',
+    height: 'calc(100% - 65px)',
     display: 'inline-block',
     position: 'relative',
-    top: '55',
+    top: '65px',
     padding: '25px',
-    marginBottom: '55px',
+    marginBottom: '50px',
 
     [mediaQueries.tablet_landscape]: {
         width: 'calc(67% - 50px)',

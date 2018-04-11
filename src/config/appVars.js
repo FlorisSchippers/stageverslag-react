@@ -2,8 +2,8 @@ const appVars = {
     url: `${window.location.protocol}//${window.location.host}`,
     title: 'Stageverslag',
     api: {
-        local: 'http://stageverslag.local/wp-json/wp/v2/',
-        live: 'http://wordpress.florisschippers.nl/index.php/wp-json/wp/v2/',
+        local: 'https://stageverslag.local/wp-json/wp/v2/',
+        live: 'https://wordpress.florisschippers.nl/index.php/wp-json/wp/v2/',
     },
     theme: {
         // lighter: '#DDFAA4',

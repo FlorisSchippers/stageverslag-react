@@ -11,9 +11,9 @@ export default glamorous.div({
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     position: 'fixed',
-    top: '55',
+    top: '65px',
     width: '0px',
-    height: 'calc(100% - 55px)',
+    height: 'calc(100% - 65px)',
     display: 'inline-block',
 
     [mediaQueries.tablet_landscape]: {
