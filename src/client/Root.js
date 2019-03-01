@@ -5,6 +5,11 @@ import App from '../components/App';
 import Leerdoel from '../components/Leerdoel';
 import Competentie from '../components/Competentie';
 import Project from '../components/Project';
+import ontwikkelen from '../data/ontwikkelen';
+import onderzoeken from '../data/onderzoeken';
+import ontwerpen from '../data/ontwerpen';
+import ondernemen from '../data/ondernemen';
+import betrokken from '../data/betrokken';
 
 // We need a Root component for React Hot Loading.
 class Root extends Component {
@@ -23,18 +28,40 @@ class Root extends Component {
       this.GetWordpressData();
     }
   }
-
   GetWordpressData() {
-    this.state.todo.forEach((leerdoel) => {
-      fetch(appVars.api.local + leerdoel) // Change back to live on production
-        .then(results => results.json())
-        .then((data) => {
-          this.setState({
-            [leerdoel]: [...data],
-            done: [...this.state.done, leerdoel],
-          });
-        });
+    //Load data staticly from local JSON
+    this.setState({
+      ['ontwikkelen']: [...ontwikkelen],
+      done: [...this.state.done, 'ontwikkelen'],
     });
+    this.setState({
+      ['onderzoeken']: [...onderzoeken],
+      done: [...this.state.done, 'onderzoeken'],
+    });
+    this.setState({
+      ['ontwerpen']: [...ontwerpen],
+      done: [...this.state.done, 'ontwerpen'],
+    });
+    this.setState({
+      ['ondernemen']: [...ondernemen],
+      done: [...this.state.done, 'ondernemen'],
+    });
+    this.setState({
+      ['betrokken']: [...betrokken],
+      done: [...this.state.done, 'betrokken'],
+    });
+
+    //Load data dynamically from remote Wordpress
+    // this.state.todo.forEach((leerdoel) => {
+    //   fetch(appVars.api.local + leerdoel) //Change back to live on production
+    //     .then(results => results.json())
+    //     .then((data) => {
+    //       this.setState({
+    //         [leerdoel]: [...data],
+    //         done: [...this.state.done, leerdoel],
+    //       });
+    //     });
+    // });
   }
 
   render() {
