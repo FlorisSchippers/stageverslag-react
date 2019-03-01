@@ -38,3 +38,6 @@ Thumbs.db
 
 # Webroot symlink
 webroot
+
+# Anything related to firebase
+*firebase*
