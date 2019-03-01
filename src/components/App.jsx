@@ -34,15 +34,15 @@ class App extends React.Component {
           '.' +
           '<br/> &nbsp; <br/>' +
           'De feedback van mijn stagebegeleider over mijn stageverslag is ' +
-          '<a class="underline" target="_blank" rel="noopener" href="https://stageverslag.florisschippers.nl/stagebegeleider-feedback.pdf">hier</a>' +
+          '<a class="underline" target="_blank" rel="noopener" href="/stagebegeleider-feedback.pdf">hier</a>' +
           ' te vinden is.' +
           '<br/> &nbsp; <br/>' +
           'Mijn beoordelingsformulier is ' +
-          '<a class="underline" target="_blank" rel="noopener" href="https://stageverslag.florisschippers.nl/floris-beoordelingsformulier.pdf">hier</a>' +
+          '<a class="underline" target="_blank" rel="noopener" href="/floris-beoordelingsformulier.pdf">hier</a>' +
           ' te vinden.' +
           '<br/> &nbsp; <br/>' +
           'Het beoordelingsformulier van mijn stagebegeleider is ' +
-          '<a class="underline" target="_blank" rel="noopener" href="https://stageverslag.florisschippers.nl/stagebegeleider-beoordelingsformulier.pdf">hier</a>' +
+          '<a class="underline" target="_blank" rel="noopener" href="/stagebegeleider-beoordelingsformulier.pdf">hier</a>' +
           ' te vinden.';
         // content.body = 'Welkom bij de implementatie van mijn stageverslag!' +
         //     '<br/> &nbsp; <br/>' +
