@@ -41,3 +41,6 @@ webroot
 
 # Anything related to firebase
 *firebase*
+
+# The password cookie
+passwordCookie.js

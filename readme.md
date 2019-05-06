@@ -1,7 +1,7 @@
 # stageverslag-react #
 ## What is this repository? ##
 
-React frontend voor mijn stageverslag
+React-powered frontend for the stageverslag-wordpress repository
 
 ### Who do I talk to? ###
-For questions about Wordpress or this repository you can address questions to Floris Schippers
+For questions about this repository you can address Floris Schippers
